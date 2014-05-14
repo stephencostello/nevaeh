@@ -1,0 +1,104 @@
+/* page title */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 300;
+  line-height: 1;
+  color: #222;
+  clear: both;
+}
+
+h1 {
+  font-size: 3em;
+  font-weight: 300;
+  margin: 0 0 40px 0;
+}
+
+/* content sub title */
+h2 {
+  font-size: 1.4em;
+  line-height: 2em;
+  margin: 40px 0 10px 0;
+}
+
+h3 {
+  font-size: 1.4em;
+}
+
+/* services */
+h4 {
+  font-size: .75em;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/* upcoming headline */
+h5 {
+  font-size: 3em;
+  margin: 0 0 40px 0;
+}
+
+/* upcoming event titles */
+h6 {
+  font: italic 300 1.2em/1.3em $times;
+  margin: 0 0 10px 0;
+  color: #333;
+}
+
+
+
+
+a {
+  color: $primary;
+  text-decoration: none;
+  -o-transition:.2s;
+  -ms-transition:.2s;
+  -moz-transition:.2s;
+  -webkit-transition:.2s;
+}
+
+p {
+  margin-bottom: 20px;
+  line-height: 2.2em;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+strong {
+  font-weight: 500;
+}
+
+.textRight {
+  text-align: right;
+}
+
+.textCenter {
+  text-align: center;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+
+
+
+.cta, .ctaHome {
+  font-weight: 400;
+  padding: 8px 28px;
+  border: 2px solid $primary;
+  color: $primary;
+  display: inline-block;
+  //@include border-radius(4px);
+}
+
+.ctaHome {
+  color: #fff;
+  border-color: #fff;
+}
+
+.cta:hover {
+  color: #fff;
+  border-color: #fff;
+}
