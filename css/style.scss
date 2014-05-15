@@ -1,6 +1,9 @@
-@import 'bourbon/bourbon';
-@import "neat/neat";
 @import 'reset';
+
+@import "bourbon/bourbon";
+@import "grid-setting";
+@import "neat/neat";
+
 
 $primary: #02daaf;
 $secondary: #059;
@@ -9,30 +12,15 @@ $openSans: 'Open Sans', 'sans-serif', Helvetica, Arial;
 $times: Times New Roman, Times, serif;
 
 
-$wLight: 300;
-$wRegular: 400;
-$wBold: 700;
-
-$border: 1px solid #eee;
-
-@mixin border-radius($radius) {
-  -webkit-border-radius: $radius;
-  -moz-border-radius: $radius;
-  -ms-border-radius: $radius;
-  border-radius: $radius;
-}
-/* SASS  --------------------------------------*/
-
 body {
-  font: 300 1em/1em $openSans;
+  font: 300 1em/1 $openSans;
   color: #444;
  }
 
-@import 'grid';
-@import 'type';
-@import 'navreal';
-@import 'form';
-
+//@import 'grid';
+@import "type";
+@import "navreal";
+@import "form";
 
 
 
@@ -72,10 +60,6 @@ footer {
   padding: 160px 0 40px 0;
   background: #222;
 }
-
-
-
-
 
 
 

@@ -47,12 +47,9 @@ h6 {
 
 
 a {
+  @include transition (all 0.2s ease-in-out);
   color: $primary;
   text-decoration: none;
-  -o-transition:.2s;
-  -ms-transition:.2s;
-  -moz-transition:.2s;
-  -webkit-transition:.2s;
 }
 
 p {
