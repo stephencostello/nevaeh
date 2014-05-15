@@ -1,7 +1,7 @@
 @import 'reset';
 
 @import "bourbon/bourbon";
-@import "grid-setting";
+@import "grid-settings";
 @import "neat/neat";
 
 
@@ -10,6 +10,11 @@ $secondary: #059;
 
 $openSans: 'Open Sans', 'sans-serif', Helvetica, Arial;
 $times: Times New Roman, Times, serif;
+$border: 1px solid #eee;
+
+
+
+
 
 
 body {
@@ -21,6 +26,33 @@ body {
 @import "type";
 @import "navreal";
 @import "form";
+
+
+
+
+
+.container {
+  @include outer-container;
+}
+
+div.main-content {
+  padding: 0 20px;
+
+  article {
+    @include span-columns(8);
+  }
+
+  aside {
+    @include shift(1);
+    @include span-columns(3);
+  }
+}
+
+
+
+
+
+
 
 
 
