@@ -1,3 +1,5 @@
+@import 'bourbon/bourbon';
+@import "neat/neat";
 @import 'reset';
 
 $primary: #02daaf;
@@ -96,7 +98,7 @@ header .container, header .container .co12 {
 }
 
 
-
+/* Homepage Sprite Area --------------------------------------*/
 ul.serviceList li {
   display: inline-block;
   float: left;
@@ -121,8 +123,6 @@ ul.serviceList li {
   }
 
 }
-
-
 
 .sprite {
   width: 150px;
