@@ -26,6 +26,7 @@ body {
 @import "type";
 @import "navreal";
 @import "form";
+@import "bxslider";
 
 
 
@@ -51,7 +52,7 @@ div.main-content {
 
 
 
-
+ul.vmgallery li.vmccell-4 {margin-right:0}
 
 
 
@@ -83,9 +84,12 @@ header {
 }
 
 #visiting {
-  padding: 80px 0;
+  height: 400px;
+  width: 100%;
   background: $primary;
   color: #fff;
+  display: table;
+  text-align: center;
 }
 
 footer {
@@ -94,7 +98,10 @@ footer {
 }
 
 
-
+.vAlign {
+    display: table-cell;
+    vertical-align: middle;
+}
 
 
 
@@ -102,10 +109,6 @@ footer {
 
 
 /* General --------------------------------------*/
-header .container, header .container .co12 {
-  width: 100%;
-}
-
 .logo {
   display: inline-block;
   width: 200px;
@@ -290,6 +293,10 @@ ul.social {
 
 
 @media only screen and (max-width: 767px) {
+
+  header .container, header .container .co12 {
+    width: 100%;
+  }
 
   /* homepage sprite */
   ul.serviceList li {

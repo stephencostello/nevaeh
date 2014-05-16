@@ -60,16 +60,13 @@
 </div>
 
 
-<!-- <div id="visiting">
-  <div class="container">
+<div id="visiting">
 
-    <div class="co12 textCenter">
+    <div class="vAlign">
       Hello World
     </div>
 
-  </div>
-</div> -->
-
+</div>
 
 <footer>
   <div class="container">
@@ -115,6 +112,24 @@
 </script>
 
 
+
+<script type='text/javascript' src='http://localhost/wordpress/wp-content/themes/starkers/js/jquery.min.js'></script>
+<script type='text/javascript' src='http://localhost/wordpress/wp-content/themes/starkers/js/jquery.fitvids.js'></script>
+<script type='text/javascript' src='http://localhost/wordpress/wp-content/themes/starkers/js/jquery.bxslider.min.js'></script>
+
+<script type="text/javascript">
+  $(document).ready(function(){
+
+$('.bxslider').bxSlider({
+  video: true,
+  useCSS: false
+});
+
+  });
+</script>
+
+
 <?php wp_footer(); ?>
+
 </body>
 </html>
