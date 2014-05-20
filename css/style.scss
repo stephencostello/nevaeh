@@ -1,18 +1,23 @@
-@import 'reset';
+@import "reset";
 
 @import "bourbon/bourbon";
-@import "grid-settings";
-@import "neat/neat";
+//@import "grid-settings";
+//@import "neat/neat";
 
 
-$primary: #02daaf;
+$primary: #aa1918;
 $secondary: #059;
 
 $openSans: 'Open Sans', 'sans-serif', Helvetica, Arial;
-$times: Times New Roman, Times, serif;
+$roboto: 'Roboto Slab', serif;
 $border: 1px solid #eee;
 
-
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
 
 
 
@@ -22,37 +27,12 @@ body {
   color: #444;
  }
 
-//@import 'grid';
+@import 'grid';
 @import "type";
 @import "navreal";
 @import "form";
 @import "bxslider";
 
-
-
-
-
-.container {
-  @include outer-container;
-}
-
-div.main-content {
-  padding: 0 20px;
-
-  article {
-    @include span-columns(8);
-  }
-
-  aside {
-    @include shift(1);
-    @include span-columns(3);
-  }
-}
-
-
-
-
-ul.vmgallery li.vmccell-4 {margin-right:0}
 
 
 
@@ -71,7 +51,7 @@ header {
 }
 
 .headerSmall {
-  height: 90px;
+  height: 60px;
 }
 
 #content {
@@ -81,10 +61,11 @@ header {
 #upcoming {
   padding: 120px 0;
   background: #f1f1f1;
+  display: none;
 }
 
 #visiting {
-  height: 400px;
+  padding: 80px 0;
   width: 100%;
   background: $primary;
   color: #fff;
@@ -96,13 +77,6 @@ footer {
   padding: 160px 0 40px 0;
   background: #222;
 }
-
-
-.vAlign {
-    display: table-cell;
-    vertical-align: middle;
-}
-
 
 
 
@@ -170,7 +144,7 @@ ul.subPages {
   padding: 20px 0 0 0;
   display: block;
   border-top: 1px solid #eee;
-  font: 300 1em/1 $times;
+  font: 300 1em/1 $roboto;
 
   li {
     display: inline-block;
@@ -219,39 +193,42 @@ ul.gce-list li {
 
 
 /* footer --------------------------------------*/
-footer, footer a {
+footer {
   color: #bbb;
 }
 
 .tweet {
-  font: 300 1.9em/1em Times;
-  font-style: italic;
-  line-height: 1.4em;
+  font: 200 1.6em/1.6em $roboto;
   display: block;
-  margin: 0 0 40px 0;
+  margin: 0 0 20px 0;
 
   a {
-    color: $primary;
+    color: #bbb;
   }
 
 }
 
 ul.social {
 
-  margin: 0 0 160px 0;
   display: block;
+  margin: 0 0 80px 0;
 
   .socialSprite {
       display: inline-block;
-      margin: 0 10px;
+      margin: 0 10px 0 0;
       height: 40px;
       width: 40px;
       background: url(images/socialBottom.png) no-repeat;
+      border: 1px solid #333;
   }
 
-  li.twitter        { @extend .socialSprite; background-position: 0       0; }
-  li.facebook       { @extend .socialSprite; background-position: -40px   0; }
-  li.instagram      { @extend .socialSprite; background-position: -80px   0; }
+  li.twitter            { @extend .socialSprite; background-position: 0       0; }
+  li.facebook           { @extend .socialSprite; background-position: -40px   0; }
+  li.instagram          { @extend .socialSprite; background-position: -80px   0; }
+
+  li.twitter:hover      { background-position: 0       -40px; }
+  li.facebook:hover     { background-position: -40px   -40px; }
+  li.instagram:hover    { background-position: -80px   -40px; }
 
 }
 

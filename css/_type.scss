@@ -4,6 +4,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1;
   color: #222;
   clear: both;
+  font-family: $roboto;
 }
 
 h1 {
@@ -38,7 +39,7 @@ h5 {
 
 /* upcoming event titles */
 h6 {
-  font: italic 300 1.2em/1.3em $times;
+  font: italic 300 1.2em/1.3em $roboto;
   margin: 0 0 10px 0;
   color: #333;
 }
@@ -84,7 +85,8 @@ img {
 
 
 
-.cta, .ctaHome {
+.cta {
+  font-family: $roboto;
   font-weight: 400;
   padding: 8px 28px;
   border: 2px solid $primary;
@@ -93,12 +95,22 @@ img {
   //@include border-radius(4px);
 }
 
-.ctaHome {
+.cta:hover {
   color: #fff;
   border-color: #fff;
 }
 
-.cta:hover {
-  color: #fff;
+#visiting .cta {
+  font-weight: 400;
+  font-size: 2em;
+  padding: 15px;
   border-color: #fff;
+  color: #fff;
+  display: inline-block;
+  //@include border-radius(4px);
+}
+
+#visiting .cta:hover {
+  border-color: #eee;
+  color: #eee;
 }

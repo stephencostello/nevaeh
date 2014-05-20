@@ -1,12 +1,13 @@
 input[type=email], input[type=text], textarea {
-  font: 300 .9em/2.6em Helvetica, Arial;
+  font: 300 1em/1em Helvetica, Arial;
   color: #aaa;
-  padding: 0 2%;
+  padding: 10px 0 10px 4%;
   width: 94%;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   outline: 0;
   border: 1px solid #454545;
   background: #222;
+  @include border-radius(2px);
 }
 
 
@@ -16,13 +17,14 @@ textarea {
 
 
 input[type=submit] {
-  font: 300 .9em Helvetica, Arial;
+  font: 300 1em/1.6em $roboto;
   cursor: pointer;
   padding: 10px 20px;
-  background: #4f99bf;
+  background: $primary;
   border: none;
   color: #fff;
   margin: 0 0 20px 0;
+  @include border-radius(2px);
 }
 
 

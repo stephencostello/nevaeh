@@ -61,36 +61,41 @@
 
 
 <div id="visiting">
-
-    <div class="vAlign">
-      Hello World
+  <div class="container">
+    <div class="co12 textCenter">
+      <a href="#" class="cta">Talk to Us</a>
     </div>
-
+  </div>
 </div>
+
 
 <footer>
   <div class="container">
 
-    <div class="co9 coCenter textCenter">
-
+    <div class="co9 mb40">
       <span class="tweet">
-        <?php //$twitterFeed = file_get_contents('http://192.168.0.111/wordpress/wp-content/themes/starkers/twitter.php'); echo $twitterFeed; ?>
+        <?php $twitterFeed = file_get_contents('http://192.168.0.111/wordpress/wp-content/themes/starkers/twitter.php'); echo $twitterFeed; ?>
       </span>
-
       <ul class="social">
         <a href="#" title="Twitter" target="_blank"><li class="twitter"></li></a>
         <a href="#" title="Facebook" target="_blank"><li class="facebook"></li></a>
         <a href="#" title="Instagram" target="_blank"><li class="instagram"></li></a>
       </ul>
-
-      <p>Design Company, 40 Great Patrick Street, Belfast, BT2 3OJ, Northern Ireland - <a href="http://stephencostello.com">Google Maps</a></p>
-
+      <p><strong>Design Company</strong>, 40 Great Patrick Street, Belfast, BT2 3OJ, Northern Ireland - <a href="http://stephencostello.com">Google Maps</a></p>
       <span class="credit"> &copy; <?php echo date("Y"); ?> - All rights reserved. Site by <a href="http://stephencostello.com">Stephen Costello</a></span>
+    </div>
 
+    <div class="co3 mb40">
+      <form>
+        <input type="text" value="Email Address" />
+        <input type="submit" value="Signup">
+      </form>
     </div>
 
   </div>
 </footer>
+
+
 
 
 <script>
@@ -99,19 +104,17 @@
         menu = $('nav ul');
         menuHeight = menu.height();
     $(pull).on('click', function(e) {
-        e.preventDefault();
-        menu.slideToggle();
+      e.preventDefault();
+      menu.slideToggle();
     });
     $(window).resize(function(){
-        var w = $(window).width();
-        if(w > 320 && menu.is(':hidden')) {
-          menu.removeAttr('style');
-        }
+      var w = $(window).width();
+      if(w > 320 && menu.is(':hidden')) {
+        menu.removeAttr('style');
+      }
     });
   });
 </script>
-
-
 
 <script type='text/javascript' src='http://localhost/wordpress/wp-content/themes/starkers/js/jquery.min.js'></script>
 <script type='text/javascript' src='http://localhost/wordpress/wp-content/themes/starkers/js/jquery.fitvids.js'></script>
@@ -120,10 +123,10 @@
 <script type="text/javascript">
   $(document).ready(function(){
 
-$('.bxslider').bxSlider({
-  video: true,
-  useCSS: false
-});
+  $('.bxslider').bxSlider({
+    video: true,
+    useCSS: false
+  });
 
   });
 </script>

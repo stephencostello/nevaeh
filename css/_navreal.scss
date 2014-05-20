@@ -2,7 +2,6 @@ ul#wpNav {
 
   float: right;
   display: block\9;
-  margin: 20px 0 0 0;
 
   li {
     display: inline;
@@ -11,11 +10,11 @@ ul#wpNav {
 
   a {
     display: inline-block;
-    line-height: 50px;
+    line-height: 60px;
     margin: 0 0 0 20px;
     color: #fff;
+    text-transform: uppercase;
     font-size: .9em;
-    font-weight: 500;
   }
 
   li:hover ul {
