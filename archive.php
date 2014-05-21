@@ -1,4 +1,4 @@
-<?php Starkers_Utilities::get_template_parts( array( 'header' ) ); ?>
+<?php Starkers_Utilities::get_template_parts( array( 'parts/header' ) ); ?>
 
 
 <?php if ( have_posts() ): ?>
@@ -29,4 +29,4 @@
 <?php endif; ?>
 
 
-<?php Starkers_Utilities::get_template_parts( array( 'footer' ) ); ?>
+<?php Starkers_Utilities::get_template_parts( array( 'parts/footer' ) ); ?>

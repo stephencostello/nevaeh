@@ -1,5 +1,5 @@
 <?php /* Template Name: Home */ ?>
-<?php Starkers_Utilities::get_template_parts( array( 'header' ) ); ?>
+<?php Starkers_Utilities::get_template_parts( array( 'parts/header' ) ); ?>
 
 
   <div id="content">
@@ -29,4 +29,4 @@
   </div>
 
 
-<?php Starkers_Utilities::get_template_parts( array( 'footer') ); ?>
+<?php Starkers_Utilities::get_template_parts( array( 'parts/footer') ); ?>

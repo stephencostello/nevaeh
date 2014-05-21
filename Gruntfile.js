@@ -45,7 +45,7 @@ module.exports = function(grunt) {
         },
 
         css: {
-            files: ['css/*.scss'],
+            files: ['xDev/css/*.scss'],
             tasks: ['sass'],
             options: {
                 spawn: false,
@@ -59,7 +59,7 @@ module.exports = function(grunt) {
               style: 'compressed'
             },
             files: {
-              'style.css': 'css/style.scss'
+              'style.css': 'xDev/css/style.scss'
             }
           }
       }
