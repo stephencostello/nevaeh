@@ -25,35 +25,6 @@
         </ul>
       </div>
 
-      <hr class="clear80" />
-
-      <ul class="gce-list">
-        <li>
-          <span class="upcomingTitle">Title goes here</span>
-          <span class="upcomingDate">Monday 11 May</span>
-          <span class="upcomingTime">18:30 - 20:30</span>
-          <span class="upcomingVenue">Mammoth Studio</span>
-        </li>
-        <li>
-          <span class="upcomingTitle">Title goes here</span>
-          <span class="upcomingDate">Monday 11 May</span>
-          <span class="upcomingTime">18:30 - 20:30</span>
-          <span class="upcomingVenue">Mammoth Studio</span>
-        </li>
-        <li>
-          <span class="upcomingTitle">Title goes here</span>
-          <span class="upcomingDate">Monday 11 May</span>
-          <span class="upcomingTime">18:30 - 20:30</span>
-          <span class="upcomingVenue">Mammoth Studio</span>
-        </li>
-        <li>
-          <span class="upcomingTitle">Title goes here</span>
-          <span class="upcomingDate">Monday 11 May</span>
-          <span class="upcomingTime">18:30 - 20:30</span>
-          <span class="upcomingVenue">Mammoth Studio</span>
-        </li>
-      </ul>
-
     </div>
   </div>
 
