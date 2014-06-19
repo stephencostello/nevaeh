@@ -1,0 +1,280 @@
+@import "reset";
+
+$primary: #52D4B7;
+$secondary: #059;
+$openSans: Helvetica, Arial;
+$roboto: 'Roboto Slab', serif;
+$border: 1px solid #e4e4e4;
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+.coverImg {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+@import "bourbon/bourbon";
+@import "grid";
+@import "type";
+@import "nav";
+@import "form";
+@import "bxslider";
+@import "tinycarousel";
+//@import "grid-settings";
+//@import "neat/neat";
+
+
+body {
+  font: 300 1em/1 $openSans;
+  color: #444;
+}
+
+
+
+
+/* --------------------------------------------*/
+/* --------------------------------------------*/
+/* --------------------------------------------*/
+/* --------------------------------------------*/
+#content, #upcoming, #visiting, footer {
+  overflow: auto;
+}
+
+
+
+
+/* --------------------------------------------*/
+/* --------------------------------------------*/
+/* --------------------------------------------*/
+/* --------------------------------------------*/
+header {
+
+  position: absolute;
+  width: 100%;
+  overflow: inherit;
+  background: #222;
+
+  .logo {
+    display: inline-block;
+    width: 200px;
+    height: 30px;
+    background: #fff;
+  }
+
+}
+
+.home header {
+  height: 100vh;
+  background-image: url('images/belfast.jpg');
+  @extend .coverImg;
+  position: static;
+}
+
+
+
+
+/* --------------------------------------------*/
+/* --------------------------------------------*/
+/* --------------------------------------------*/
+/* --------------------------------------------*/
+#content {
+
+  padding: 120px 0 80px 0;
+
+  p {
+    line-height: 2.2em;
+  }
+
+  aside, aside a {
+
+    color: #aaa;
+    line-height: 2em;
+
+    a.currentSub {
+      color: $primary;
+    }
+
+    ul.subs {
+      margin: 0 0 40px 0;
+    }
+
+  }
+
+}
+
+
+
+
+/* --------------------------------------------*/
+/* --------------------------------------------*/
+/* --------------------------------------------*/
+/* --------------------------------------------*/
+#upcoming {
+
+  padding: 1px 0 120px 0;
+  text-align: center;
+
+  .co3 {
+     -moz-box-shadow: 0 0 1px 0px #ddd;
+     -webkit-box-shadow: 0 0 1px 0px #ddd;
+     box-shadow: 0 0 1px 0px #ddd;
+    padding: 2% 0;
+    margin: 0 2%;
+  }
+
+  .upcomingTitle {
+    font: 500 1.2em $roboto;
+    display: block;
+    margin: 0 0 10px 0;
+  }
+
+  .upcomingDate, .upcomingTime, .upcomingVenue {
+    display: block;
+    font-size: .9em;
+    line-height: 1.8em;
+  }
+
+}
+
+
+
+
+/* --------------------------------------------*/
+/* --------------------------------------------*/
+/* --------------------------------------------*/
+/* --------------------------------------------*/
+#visiting {
+
+  padding: 40px 0;
+  font: 1.2em $roboto;
+  background: $primary;
+  color: #fff;
+
+  a {
+    color: #fff;
+  }
+
+  a:hover {
+    color: #222;
+  }
+
+}
+
+
+
+
+/* --------------------------------------------*/
+/* --------------------------------------------*/
+/* --------------------------------------------*/
+/* --------------------------------------------*/
+footer {
+
+  padding: 80px 0 40px 0;
+  background: #222;
+  color: #777;
+  line-height: 1.6em;
+
+  a {
+    color: #777;
+  }
+
+  p {
+    margin: 0 0 10px 0;
+  }
+
+  .tweet {
+    font: 200 1.6em $roboto;
+    display: block;
+    margin: 0 0 20px 0;
+  }
+
+  ul.social {
+    display: block;
+
+    .socialSprite {
+      display: inline-block;
+      margin: 0 10px 0 0;
+      height: 40px;
+      width: 40px;
+      background: url(images/socialBottom.png) no-repeat;
+    }
+    li.twitter            { @extend .socialSprite; background-position: 0         0; }
+    li.facebook           { @extend .socialSprite; background-position: -40px     0; }
+    li.instagram          { @extend .socialSprite; background-position: -80px     0; }
+    li.maps               { @extend .socialSprite; background-position: -120px    0; }
+    li.twitter:hover      { background-position: 0        -40px; }
+    li.facebook:hover     { background-position: -40px    -40px; }
+    li.instagram:hover    { background-position: -80px    -40px; }
+    li.maps:hover         { background-position: -120px   -40px; }
+  }
+
+  .credit {
+    padding-top: 40px;
+    border-top: 1px solid #333;
+    font-size: .8em;
+  }
+
+}
+
+
+
+
+
+
+/* Homepage Sprite --------------------------------------*/
+ul.serviceList li {
+  display: inline-block;
+  float: left;
+  width: 29.2%;
+  padding: 5% 2%;
+  text-align: center;
+
+  &:nth-child(-n+3) {
+    border-bottom: $border;
+  }
+
+  &:nth-child(n+1):nth-child(-n+2) {
+    border-right: $border;
+  }
+
+  &:nth-child(n+4):nth-child(-n+5) {
+    border-right: $border;
+  }
+
+  & img {
+    margin: 0 auto 10px auto;
+  }
+
+}
+
+.sprite {
+  width: 150px;
+  height: 150px;
+  background: url(images/sprite.jpg) no-repeat;
+  display: inline-block;
+  background-size: 300%;
+  margin: 0 0 10px 0;
+}
+
+.spriteOne     { @extend .sprite; background-position: 0         0; }
+.spriteTwo     { @extend .sprite; background-position: -150px    0; }
+.spriteThree   { @extend .sprite; background-position: -300px    0; }
+.spriteFour    { @extend .sprite; background-position: 0         -150px; }
+.spriteFive    { @extend .sprite; background-position: -150px    -150px ; }
+.spriteSix     { @extend .sprite; background-position: -300px    -150px; }
+
+
+
+
+/* --------------------------------------------*/
+/* --------------------------------------------*/
+/* --------------------------------------------*/
+/* --------------------------------------------*/
+@import "mobile";

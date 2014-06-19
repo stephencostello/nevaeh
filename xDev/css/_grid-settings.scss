@@ -1,0 +1,33 @@
+@import "neat/neat-helpers";
+
+
+/*****************
+  Grid settings
+*/
+
+$grid-columns: 12;
+$max-width: 1140px;
+
+
+/***************
+  Breakpoints
+*/
+
+$small-desktop: new-breakpoint(max-width 1139px 8);
+$tablet: new-breakpoint(max-width 1023px 6);
+$mobile: new-breakpoint(max-width 767px 1);
+
+
+.clearfix {
+  *zoom: 1;
+
+  &:before,
+  &:after {
+    content: "";
+    display: table;
+  }
+
+  &:after {
+    clear: both;
+  }
+}

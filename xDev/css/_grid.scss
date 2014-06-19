@@ -1,0 +1,80 @@
+.container {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1080px;
+}
+
+.co {
+  float: left;
+  padding: 0 2%;
+}
+
+.co1    { @extend .co; width: 4.33333333333%; }
+.co2    { @extend .co; width: 12.6666666667%%; }
+.co3    { @extend .co; width: 21.0%; }
+.co4    { @extend .co; width: 29.3333333333%; }
+.co5    { @extend .co; width: 37.6666666667%; }
+.co6    { @extend .co; width: 46.0%; }
+.co7    { @extend .co; width: 54.3333333333%; }
+.co8    { @extend .co; width: 62.6666666667%; }
+.co9    { @extend .co; width: 71.0%; }
+.co10   { @extend .co; width: 79.3333333333%; }
+.co11   { @extend .co; width: 87.6666666667%; }
+.co12   { @extend .co; width: 96%; }
+
+.coCenter {
+  margin-left: auto;
+  margin-right: auto;
+  float: none;
+}
+
+.coFirst {
+  margin-left: 0;
+}
+
+.coLast {
+  margin-right: 0;
+}
+
+.mb0            { margin-bottom: 0px; }
+.mb5            { margin-bottom: 5px; }
+.mb10           { margin-bottom: 10px; }
+.mb20           { margin-bottom: 20px; }
+.mb40           { margin-bottom: 40px; }
+.mb80           { margin-bottom: 80px; }
+
+.clear {
+  height: 1px;
+  display: block;
+  clear: both;
+  overflow: hidden;
+}
+
+.clear10        { @extend .clear; height: 10px; }
+.clear20        { @extend .clear; height: 20px; }
+.clear40        { @extend .clear; height: 40px; }
+.clear80        { @extend .clear; height: 80px; }
+.clear160       { @extend .clear; height: 160px; }
+
+.floatLeft      { float: left; }
+.floatRight     { float: right; }
+
+
+
+
+/* Phone Lan */
+@media only screen and (max-width: 767px) {
+
+  .container {
+    width: 90%;
+  }
+
+  .co1, .co2, .co3, .co4, .co5, .co6, .co7, .co8, .co9, .co10, .co11, .co12 {
+    width: 96%;
+  }
+
+  .container, .co12 {
+    margin-bottom: 0;
+  }
+
+}

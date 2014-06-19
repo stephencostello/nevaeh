@@ -1,0 +1,41 @@
+input[type=email], input[type=text], textarea {
+  font: 300 1em/1em Helvetica, Arial;
+  color: #aaa;
+  padding: 10px 0 10px 4%;
+  width: 94%;
+  margin-bottom: 10px;
+  outline: 0;
+  border: 1px solid #454545;
+  background: #222;
+  @include border-radius(2px);
+}
+
+textarea {
+  height: 100px;
+}
+
+input[type=submit] {
+  font: 300 1em/1.6em $roboto;
+  letter-spacing: 1px;
+  cursor: pointer;
+  padding: 10px 25px;
+  background: $primary;
+  border: none;
+  color: #fff;
+  @include border-radius(2px);
+}
+
+input:hover[type=submit] {
+  background: #eee;
+  color: #222;
+}
+
+
+/* footer email signup */
+footer input[type=email] {
+  color: #ddd;
+}
+
+footer input[type=submit] {
+  background: #777;
+}

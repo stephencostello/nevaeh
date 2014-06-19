@@ -1,0 +1,104 @@
+/* page title */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 300;
+  line-height: 1;
+  color: #222;
+  clear: both;
+  font-family: $roboto;
+}
+
+/* page title */
+h1 {
+  font-size: 3em;
+  font-weight: 300;
+  margin: 0 0 40px 0;
+}
+
+/* content sub title */
+h2 {
+  font-size: 1.4em;
+  line-height: 2em;
+  margin: 40px 0 10px 0;
+}
+
+h3 {
+  font-size: 1.4em;
+}
+
+/* services */
+h4 {
+  font-size: .75em;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/* sidebar */
+h5 {
+  font: 300 1.2em/1em $roboto;
+  margin: 0 0 10px 0;
+  color: #aaa;
+}
+
+/* footer */
+h6 {
+  font: 300 1.2em/1.3em $roboto;
+  margin: 0 0 10px 0;
+  color: #ddd;
+}
+
+
+
+
+a {
+  @include transition (all 0.2s ease-in-out);
+  color: $primary;
+  text-decoration: none;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+strong {
+  font-weight: 500;
+}
+
+.textRight {
+  text-align: right;
+}
+
+.textCenter {
+  text-align: center;
+}
+
+img, object, embed {
+  max-width: 100%;
+  height: auto;
+}
+
+hr {
+  border: none;
+}
+
+
+
+
+.cta {
+  font-family: $roboto;
+  font-weight: 400;
+  padding: 0 28px;
+  line-height: 36px;
+  border: 2px solid $primary;
+  color: $primary;
+  display: inline-block;
+  //@include border-radius(4px);
+}
+
+.cta:hover {
+  color: #fff;
+  border-color: #fff;
+}
