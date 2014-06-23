@@ -1,13 +1,17 @@
-input[type=email], input[type=text], textarea {
+label {
+  font: 500 .9em/1em Helvetica, Arial;
+}
+
+input[type=text], textarea {
   font: 300 1em/1em Helvetica, Arial;
-  color: #aaa;
-  padding: 10px 0 10px 4%;
-  width: 94%;
+  color: #777;
+  padding: 15px 1%;
+  width: 96%;
   margin-bottom: 10px;
   outline: 0;
-  border: 1px solid #454545;
-  background: #222;
-  @include border-radius(2px);
+  border: $border;
+  background: #f1f1f1;
+  @include border-radius(3px);
 }
 
 textarea {
@@ -15,10 +19,9 @@ textarea {
 }
 
 input[type=submit] {
-  font: 300 1em/1.6em $roboto;
-  letter-spacing: 1px;
+  font: 300 1.2em/2.8em Helvetica, Arial;
   cursor: pointer;
-  padding: 10px 25px;
+  padding: 0 30px;
   background: $primary;
   border: none;
   color: #fff;
@@ -26,16 +29,21 @@ input[type=submit] {
 }
 
 input:hover[type=submit] {
-  background: #eee;
-  color: #222;
+  background: #444;
 }
 
 
 /* footer email signup */
 footer input[type=email] {
-  color: #ddd;
+  color: #bbb;
+  padding: 12px 2%;
+  width: 94%;
 }
 
 footer input[type=submit] {
-  background: #777;
+  background: #444;
+}
+
+footer input:hover[type=submit] {
+  background: $primary;
 }

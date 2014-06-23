@@ -1,10 +1,11 @@
 @import "reset";
 
-$primary: #52D4B7;
+//$primary: #52D4B7;
+$primary: #079;
 $secondary: #059;
 $openSans: Helvetica, Arial;
-$roboto: 'Roboto Slab', serif;
-$border: 1px solid #e4e4e4;
+$roboto: Helvetica, Arial;
+$border: 1px solid #e8e8e8;
 
 @mixin border-radius($radius) {
   -webkit-border-radius: $radius;
@@ -32,7 +33,7 @@ $border: 1px solid #e4e4e4;
 
 
 body {
-  font: 300 1em/1 $openSans;
+  font: 300 .9em/1 $openSans;
   color: #444;
 }
 
@@ -86,18 +87,22 @@ header {
 /* --------------------------------------------*/
 #content {
 
-  padding: 120px 0 80px 0;
+  padding: 160px 0;
 
+
+  /* --------------------------------------------*/
   p {
     line-height: 2.2em;
   }
 
+
+  /* --------------------------------------------*/
   aside, aside a {
 
     color: #aaa;
     line-height: 2em;
 
-    a.currentSub {
+    a.currentSub, a:hover {
       color: $primary;
     }
 
@@ -107,7 +112,36 @@ header {
 
   }
 
+
+  /* --------------------------------------------*/
+  ul.messages {
+
+    li {
+      padding: 40px 0;
+      border-bottom: $border;
+    }
+
+    li:first-child {
+      padding-top: 0;
+    }
+
+    li:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+
+    time {
+      display: block;
+      margin-bottom: 20px;
+    }
+
+  }
+
+
 }
+
+
+
 
 
 
@@ -118,27 +152,37 @@ header {
 /* --------------------------------------------*/
 #upcoming {
 
-  padding: 1px 0 120px 0;
+  //padding: 0 0 120px 0;
+  padding: 120px 0;
   text-align: center;
+  background: $primary;
+  color: #fff;
 
-  .co3 {
-     -moz-box-shadow: 0 0 1px 0px #ddd;
-     -webkit-box-shadow: 0 0 1px 0px #ddd;
-     box-shadow: 0 0 1px 0px #ddd;
-    padding: 2% 0;
-    margin: 0 2%;
+  .container {
+    //padding-top: 80px;
+    //border-top: $border;
   }
 
-  .upcomingTitle {
-    font: 500 1.2em $roboto;
-    display: block;
-    margin: 0 0 10px 0;
+  li {
+    background: url('images/calendar.png') no-repeat top;
+    float: left;
+    padding: 60px 2% 0 2%;
+    width: 21%;
   }
 
   .upcomingDate, .upcomingTime, .upcomingVenue {
     display: block;
-    font-size: .9em;
-    line-height: 1.8em;
+    //font-size: .9em;
+    line-height: 2em;
+  }
+
+  a {
+    color: #fff;
+    border-bottom: 1px dotted #fff;
+    margin: 80px 0 0 0;
+    padding: 0 0 5px 0;
+    display: inline-block;
+    text-align: right;
   }
 
 }
@@ -177,12 +221,12 @@ header {
 footer {
 
   padding: 80px 0 40px 0;
-  background: #222;
-  color: #777;
+  background: #f8f8f8;
+  color: #aaa;
   line-height: 1.6em;
 
   a {
-    color: #777;
+    color: #aaa;
   }
 
   p {
@@ -217,7 +261,7 @@ footer {
 
   .credit {
     padding-top: 40px;
-    border-top: 1px solid #333;
+    border-top: $border;
     font-size: .8em;
   }
 

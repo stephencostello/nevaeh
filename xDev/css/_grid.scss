@@ -73,8 +73,14 @@
     width: 96%;
   }
 
-  .container, .co12 {
-    margin-bottom: 0;
-  }
+  // .container, .co12 {
+  //   margin-bottom: 0;
+  // }
+
+  .mobile0      { margin-bottom: 0px; }
+  .mobile10     { margin-bottom: 10px; }
+  .mobile20     { margin-bottom: 20px; }
+  .mobile40     { margin-bottom: 40px; }
+  .mobile80     { margin-bottom: 80px; }
 
 }

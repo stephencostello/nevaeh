@@ -1,50 +1,55 @@
 /* page title */
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 300;
-  line-height: 1;
-  color: #222;
+  font: 500 1em/1em $roboto;
+  color: #444;
   clear: both;
-  font-family: $roboto;
+  display: block;
+  margin: 0 0 20px 0;
 }
 
-/* page title */
-h1 {
-  font-size: 3em;
-  font-weight: 300;
-  margin: 0 0 40px 0;
-}
+  /* page title */
+  h1 {
+    font-size: 1.6em;
+    text-transform: uppercase;
+  }
 
-/* content sub title */
-h2 {
-  font-size: 1.4em;
-  line-height: 2em;
-  margin: 40px 0 10px 0;
-}
+  /* content sub title */
+  h2 {
+    font-size: 1.4em;
+    text-transform: uppercase;
+  }
 
-h3 {
-  font-size: 1.4em;
-}
+  /* content sub title with border */
+  h3 {
+    font-size: 1.4em;
+    border-top: $border;
+    margin-top: 80px;
+    padding-top: 80px;
+    text-transform: uppercase;
+  }
 
-/* services */
-h4 {
-  font-size: .75em;
-  font-weight: 700;
-  text-transform: uppercase;
-}
+  /* homepage blocks */
+  h4 {
+    font-size: 1.2em;
+    margin: 0;
+  }
 
-/* sidebar */
-h5 {
-  font: 300 1.2em/1em $roboto;
-  margin: 0 0 10px 0;
-  color: #aaa;
-}
+  /* upcoming events heading */
+  h5 {
+    font-size: 1.1em;
+    line-height: 3em;
+    margin-bottom: 80px;
+    color: #fff;
+    text-transform: uppercase;
+  }
 
-/* footer */
-h6 {
-  font: 300 1.2em/1.3em $roboto;
-  margin: 0 0 10px 0;
-  color: #ddd;
-}
+  /* upcoming events name */
+  h6 {
+    color: #fff;
+    font-size: 1.1em;
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
 
 
 
@@ -84,6 +89,12 @@ hr {
   border: none;
 }
 
+
+.lines {
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  padding: 20px 0;
+}
 
 
 

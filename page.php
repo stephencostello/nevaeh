@@ -1,10 +1,10 @@
 <?php Starkers_Utilities::get_template_parts( array( 'parts/header' ) ); ?>
 
 
-  <div id="content">
+  <section id="content">
     <div class="container">
 
-      <div class="co12">
+      <div class="co12 mb0">
         <img src="http://lorempixel.com/766/400/" class="floatRight" />
       </div>
 
@@ -20,7 +20,7 @@
       </article>
 
     </div>
-  </div>
+  </section>
 
 
 <?php Starkers_Utilities::get_template_parts( array( 'parts/footer') ); ?>

@@ -1,61 +1,58 @@
   <div id="upcoming">
     <div class="container">
 
-        <ul class="gce-list">
-          <li>
-            <div class="co3">
-              <span class="upcomingTitle">One</span>
-              <span class="upcomingDate">Monday 11 May</span>
-              <span class="upcomingTime">18:30 - 20:30</span>
-              <span class="upcomingVenue">Mammoth Studio</span>
-            </div>
-          </li>
-          <li>
-            <div class="co3">
-              <span class="upcomingTitle">One</span>
-              <span class="upcomingDate">Monday 11 May</span>
-              <span class="upcomingTime">18:30 - 20:30</span>
-              <span class="upcomingVenue">Mammoth Studio</span>
-            </div>
-          </li>
-          <li>
-            <div class="co3">
-              <span class="upcomingTitle">One</span>
-              <span class="upcomingDate">Monday 11 May</span>
-              <span class="upcomingTime">18:30 - 20:30</span>
-              <span class="upcomingVenue">Mammoth Studio</span>
-            </div>
-          </li>
-          <li>
-            <div class="co3">
-              <span class="upcomingTitle">One</span>
-              <span class="upcomingDate">Monday 11 May</span>
-              <span class="upcomingTime">18:30 - 20:30</span>
-              <span class="upcomingVenue">Mammoth Studio</span>
-            </div>
-          </li>
-        </ul>
+      <ul class="gce-list">
+        <li>
+          <h6>Keynote Speech</h6>
+          <span class="upcomingDate">Monday 11 May</span>
+          <span class="upcomingTime">18:30 - 20:30</span>
+          <span class="upcomingVenue">Mammoth Studio</span>
+        </li>
+        <li>
+          <h6>New Office Party</h6>
+          <span class="upcomingDate">Monday 11 May</span>
+          <span class="upcomingTime">18:30 - 20:30</span>
+          <span class="upcomingVenue">Mammoth Studio</span>
+        </li>
+        <li>
+          <h6>Showcase Event</h6>
+          <span class="upcomingDate">Monday 11 May</span>
+          <span class="upcomingTime">18:30 - 20:30</span>
+          <span class="upcomingVenue">Mammoth Studio</span>
+        </li>
+        <li>
+          <h6>Random Night Out</h6>
+          <span class="upcomingDate">Monday 11 May</span>
+          <span class="upcomingTime">18:30 - 20:30</span>
+          <span class="upcomingVenue">Mammoth Studio</span>
+        </li>
+      </ul>
+      <!-- <h5><span class="lines">View more Upcoming Events</span></h5> -->
+      <a href="#">View all events &rarr;</a>
 
     </div>
   </div>
 
 
-  <div id="visiting">
+
+
+  <!-- <div id="visiting">
     <div class="container">
       <div class="co12 textCenter">
         <p>Intested in our design work? <a href="#">Talk to us</a></p>
-        <!-- <a href="#" class="cta">Talk to Us</a> -->
       </div>
     </div>
-  </div>
+  </div> -->
+
+
 
 
   <footer>
     <div class="container">
 
-      <div class="co8">
+      <div class="co8 mobile40">
         <span class="tweet">
-          <?php $twitterFeed = file_get_contents('http://192.168.0.111/wordpress/wp-content/themes/starkers/twitter.php'); echo $twitterFeed; ?>
+          <?php //$twitterFeed = file_get_contents('http://192.168.0.111/wordpress/wp-content/themes/starkers/twitter.php'); echo $twitterFeed; ?>
         </span>
         <ul class="social">
           <a href="#" title="Twitter" target="_blank"><li class="twitter"></li></a>
@@ -66,7 +63,7 @@
       </div>
 
       <div class="co4">
-        <h6>Stay Connected</h6>
+        <p><strong>Stay Connected</strong></p>
         <p>Receive updates from our company, join our mailing list.</p>
         <form>
           <input type="email" value="Email Address" />
