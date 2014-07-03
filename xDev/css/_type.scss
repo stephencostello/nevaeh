@@ -1,22 +1,23 @@
 /* page title */
 h1, h2, h3, h4, h5, h6 {
-  font: 500 1em/1em $roboto;
+  font: 400 1em/1em $openSans;
   color: #444;
   clear: both;
   display: block;
   margin: 0 0 20px 0;
+  text-transform: uppercase;
 }
 
   /* page title */
   h1 {
     font-size: 1.6em;
-    text-transform: uppercase;
+    //text-transform: uppercase;
   }
 
   /* content sub title */
   h2 {
     font-size: 1.4em;
-    text-transform: uppercase;
+    //text-transform: uppercase;
   }
 
   /* content sub title with border */
@@ -25,30 +26,31 @@ h1, h2, h3, h4, h5, h6 {
     border-top: $border;
     margin-top: 80px;
     padding-top: 80px;
-    text-transform: uppercase;
+    //text-transform: uppercase;
   }
 
-  /* homepage blocks */
-  h4 {
-    font-size: 1.2em;
+  /* landing page blocks */
+  h4, h4 a {
+    font: 600 1em/1em $openSans;
+    letter-spacing: 1px;
     margin: 0;
-  }
-
-  /* upcoming events heading */
-  h5 {
-    font-size: 1.1em;
-    line-height: 3em;
-    margin-bottom: 80px;
-    color: #fff;
-    text-transform: uppercase;
+    color: $secondary;
   }
 
   /* upcoming events name */
-  h6 {
-    color: #fff;
+  h5 {
     font-size: 1.1em;
-    font-weight: 500;
-    margin-bottom: 10px;
+    color: #777;
+    margin: 0 0 10px 0;
+    text-transform: none;
+  }
+
+  /* footer titles */
+  h6 {
+    color: #999;
+    font-weight: 400;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
   }
 
 
@@ -99,17 +101,17 @@ hr {
 
 
 .cta {
-  font-family: $roboto;
-  font-weight: 400;
-  padding: 0 28px;
-  line-height: 36px;
-  border: 2px solid $primary;
-  color: $primary;
+  font-size: 1em !important;
+  text-transform: uppercase;
+  letter-spacing: .5px;
+  color: #fff;
+  padding: 0 20px;
+  line-height: 3em;
   display: inline-block;
-  //@include border-radius(4px);
+  border: 2px solid #fff;
+  @include border-radius(2px);
 }
 
 .cta:hover {
-  color: #fff;
-  border-color: #fff;
+  color: #444;
 }

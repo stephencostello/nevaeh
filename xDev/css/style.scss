@@ -1,10 +1,8 @@
 @import "reset";
 
-//$primary: #52D4B7;
-$primary: #079;
-$secondary: #059;
-$openSans: Helvetica, Arial;
-$roboto: Helvetica, Arial;
+$primary: #52D4B7;
+$secondary: #444;
+$openSans: 'Open Sans', sans-serif;
 $border: 1px solid #e8e8e8;
 
 @mixin border-radius($radius) {
@@ -33,7 +31,7 @@ $border: 1px solid #e8e8e8;
 
 
 body {
-  font: 300 .9em/1 $openSans;
+  font: 300 .9em/1 Helvetica, Arial;
   color: #444;
 }
 
@@ -44,7 +42,7 @@ body {
 /* --------------------------------------------*/
 /* --------------------------------------------*/
 /* --------------------------------------------*/
-#content, #upcoming, #visiting, footer {
+header, #content, #upcoming, #visiting, footer {
   overflow: auto;
 }
 
@@ -57,26 +55,40 @@ body {
 /* --------------------------------------------*/
 header {
 
-  position: absolute;
   width: 100%;
-  overflow: inherit;
-  background: #222;
+  z-index: 9999999;
+  background: #262626;
+
+  .co12 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
 
   .logo {
-    display: inline-block;
-    width: 200px;
-    height: 30px;
-    background: #fff;
+    float: left;
   }
 
 }
 
 .home header {
-  height: 100vh;
-  background-image: url('images/belfast.jpg');
-  @extend .coverImg;
-  position: static;
+  background: none;
+  position: absolute;
+  overflow: inherit;
 }
+
+
+
+
+/* --------------------------------------------*/
+/* --------------------------------------------*/
+/* --------------------------------------------*/
+/* --------------------------------------------*/
+#banner {
+
+  background: #097;
+
+}
+
 
 
 
@@ -87,8 +99,22 @@ header {
 /* --------------------------------------------*/
 #content {
 
-  padding: 160px 0;
+  padding: 120px 0 80px 0;
 
+
+  .homePod {
+    height: 270px;
+    margin: 0;
+    text-align: center;
+  }
+
+  .homePod:nth-child(odd) {
+    background: #097;
+  }
+
+  .homePod:nth-child(even) {
+    background: #642;
+  }
 
   /* --------------------------------------------*/
   p {
@@ -145,6 +171,22 @@ header {
 
 
 
+/* --------------------------------------------*/
+/* --------------------------------------------*/
+/* --------------------------------------------*/
+/* --------------------------------------------*/
+.landing {
+
+  .co3{
+    margin-bottom: 40px;
+  }
+
+}
+
+
+
+
+
 
 /* --------------------------------------------*/
 /* --------------------------------------------*/
@@ -152,37 +194,26 @@ header {
 /* --------------------------------------------*/
 #upcoming {
 
-  //padding: 0 0 120px 0;
-  padding: 120px 0;
+  padding: 0 0 120px 0;
   text-align: center;
-  background: $primary;
-  color: #fff;
+  color: #999;
+  //background: $primary;
 
   .container {
-    //padding-top: 80px;
-    //border-top: $border;
+    border-top: $border;
+    padding-top: 80px;
   }
 
   li {
     background: url('images/calendar.png') no-repeat top;
     float: left;
-    padding: 60px 2% 0 2%;
+    padding: 70px 2% 0 2%;
     width: 21%;
   }
 
   .upcomingDate, .upcomingTime, .upcomingVenue {
     display: block;
-    //font-size: .9em;
-    line-height: 2em;
-  }
-
-  a {
-    color: #fff;
-    border-bottom: 1px dotted #fff;
-    margin: 80px 0 0 0;
-    padding: 0 0 5px 0;
-    display: inline-block;
-    text-align: right;
+    line-height: 1.6em;
   }
 
 }
@@ -196,17 +227,29 @@ header {
 /* --------------------------------------------*/
 #visiting {
 
-  padding: 40px 0;
-  font: 1.2em $roboto;
+  padding: 80px 0;
+  text-align: center;
   background: $primary;
-  color: #fff;
+  -webkit-box-shadow: inset 0px 4px 2px 0px rgba(0,0,0,0.15);
+  -moz-box-shadow: inset 0px 4px 2px 0px rgba(0,0,0,0.15);
+  box-shadow: inset 0px 4px 2px 0px rgba(0,0,0,0.15);
 
-  a {
+  p {
+    font: 600 1.9em $openSans;
+    letter-spacing: 3px;
+    text-transform: uppercase;
     color: #fff;
+    margin: 0 0 40px 0;
   }
 
-  a:hover {
-    color: #222;
+  .cta {
+    color: #fff;
+    border-color: #fff;
+  }
+
+  .cta:hover {
+    color: #444;
+    border-color: #444;
   }
 
 }
@@ -221,22 +264,28 @@ header {
 footer {
 
   padding: 80px 0 40px 0;
-  background: #f8f8f8;
-  color: #aaa;
+  background: #262626;
+  color: #666;
   line-height: 1.6em;
 
   a {
-    color: #aaa;
+    color: #666;
+  }
+
+  a:hover {
+    color: $primary;
   }
 
   p {
     margin: 0 0 10px 0;
   }
 
-  .tweet {
-    font: 200 1.6em $roboto;
-    display: block;
-    margin: 0 0 20px 0;
+  ul.tweet {
+    li {
+      //font: 200 1.6em $openSans;
+      //display: block;
+      margin: 0 0 10px 0;
+    }
   }
 
   ul.social {
@@ -260,8 +309,8 @@ footer {
   }
 
   .credit {
-    padding-top: 40px;
-    border-top: $border;
+    //padding-top: 40px;
+    //border-top: $border;
     font-size: .8em;
   }
 
@@ -271,8 +320,11 @@ footer {
 
 
 
-
-/* Homepage Sprite --------------------------------------*/
+/* --------------------------------------------*/
+/* --------------------------------------------*/
+/* --------------------------------------------*/
+/* --------------------------------------------*/
+/* Homepage Sprite ----------------------------
 ul.serviceList li {
   display: inline-block;
   float: left;
@@ -313,7 +365,7 @@ ul.serviceList li {
 .spriteFour    { @extend .sprite; background-position: 0         -150px; }
 .spriteFive    { @extend .sprite; background-position: -150px    -150px ; }
 .spriteSix     { @extend .sprite; background-position: -300px    -150px; }
-
+*/
 
 
 

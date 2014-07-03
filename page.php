@@ -4,11 +4,9 @@
   <section id="content">
     <div class="container">
 
-      <div class="co12 mb0">
-        <img src="http://lorempixel.com/766/400/" class="floatRight" />
+      <div class="co12 mb40">
+        <img src="http://localhost/wordpress/wp-content/themes/starkers/images/banner.jpeg" class="floatRight" />
       </div>
-
-      <hr class="clear40" />
 
       <?php Starkers_Utilities::get_template_parts( array( 'parts/sidebar') ); ?>
 

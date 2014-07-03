@@ -11,25 +11,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
     <link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/img/favicon.ico"/>
-    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:300' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,300' rel='stylesheet' type='text/css'>
     <?php wp_head(); ?>
   </head>
   <body <?php body_class(); ?>>
 
 
-  <?php if(is_front_page() ) { ?>
   <header>
-  <?php } else { ?>
-  <header class="headerSmall">
-  <?php } ?>
-
     <div class="co12">
-
+      <a href="../index.php"><img src="http://placehold.it/300x40" class="logo"></a>
       <nav class="clearfix">
-        <a href="#" id="pull">Hello World</a>
+        <a href="#" id="pull">
+          <img src="http://placehold.it/300x40">
+        </a>
         <?php wp_nav_menu( array('menu' => 'Primary', 'container' => '', 'menu_class' => 'clearfix', 'menu_id' => 'wpNav', )); ?>
       </nav>
-
     </div>
-
   </header>

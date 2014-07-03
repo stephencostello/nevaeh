@@ -1,5 +1,5 @@
 .mobileOnly {
-  display: none !important;
+  display: none;
 }
 
 @media only screen and (max-width: 980px) {
@@ -17,6 +17,14 @@
     display: none;
   }
 
+  .logo {
+    display: none;
+  }
+
+  .mobileOnly {
+    display: block;
+  }
+
   header {
     position: relative;
     overflow: auto;
@@ -27,7 +35,8 @@
     padding: 0;
   }
 
-  /* homepage sprite */
+  /*
+  homepage sprite
   ul.serviceList li {
     width: 45.7%;
     padding: 4% 2%;
@@ -40,6 +49,19 @@
     &:nth-child(even) {
       border-right: none !important;
     }
+  }
+  */
+
+  .homePod {
+    width: 46%;
+  }
+
+  .landing {
+
+    .co3 {
+      width: 46%;
+    }
+
   }
 
   /* upcoming events banner */
@@ -65,12 +87,14 @@
 
 @media only screen and (max-width: 480px) {
 
-  /* homepage sprite */
+  /*
+  homepage sprite
   ul.serviceList li {
     width: 96%;
     border-bottom: $border;
     border-right: none !important;
   }
+  */
 
   /* upcoming events banner */
   #upcoming {
